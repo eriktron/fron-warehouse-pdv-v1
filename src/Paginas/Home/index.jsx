@@ -10,7 +10,7 @@ function Home() {
 
   useEffect(()=>{
     fetch('http://localhost:3000/api/w1/categoria')
-      // .then(response => console.log(response.json()))
+      // .then(response => console.log(response.json())) para probar conexion
       .then(response => response.json())
       .then(data => setItems(data))
   }, [])
@@ -23,7 +23,7 @@ function Home() {
               <li key={item.id}>{item.nombre} {item.descripcion} </li>
             ))
           }
-          <TablaSimple />
+          <TablaSimple {data} />
           
       </Layout>
     )
