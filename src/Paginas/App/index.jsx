@@ -6,6 +6,7 @@ import Unidad from '../Unidad'
 import Proveedor from '../Proveedor'
 import NotFound from '../NotFound'
 import Sesion from '../Sesion'
+import Navbar from '../../Componentes/Navbar'
 import './App.css'
 
 const AppRoutes = () =>{
@@ -24,12 +25,14 @@ const AppRoutes = () =>{
 const App = () => {
 
   return (
-    <div className="bg-green-400">
-        Index
-        <BrowserRouter>
-            <AppRoutes />
-        </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <AppRoutes />
+      <Navbar />
+    </BrowserRouter>
+    // <div className="bg-green-400">
+    //     Index
+        
+    // </div>
   )
 }
 

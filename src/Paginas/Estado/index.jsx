@@ -1,9 +1,11 @@
+import Layout from "../../Componentes/Layout"
+
 function Estado() {
 
     return (
-      <div className="bg-green-400">
+      <Layout>
           Estado
-      </div>
+      </Layout>
     )
   }
   

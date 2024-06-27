@@ -1,9 +1,11 @@
+import Layout from "../../Componentes/Layout"
+
 function Proveedor() {
 
     return (
-      <div className="bg-green-400">
+      <Layout>
           Proveedor
-      </div>
+      </Layout>
     )
   }
   

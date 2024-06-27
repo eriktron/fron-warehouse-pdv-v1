@@ -1,9 +1,11 @@
+import Layout from "../../Componentes/Layout"
+
 function Unidad() {
 
     return (
-      <div className="bg-green-400">
+      <Layout>
           Unidad
-      </div>
+      </Layout>
     )
   }
   

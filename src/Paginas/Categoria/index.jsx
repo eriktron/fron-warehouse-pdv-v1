@@ -1,9 +1,11 @@
+import Layout from "../../Componentes/Layout"
+
 function Categoria() {
 
     return (
-      <div className="bg-green-400">
+      <Layout>
           Categoria
-      </div>
+      </Layout>
     )
   }
   
