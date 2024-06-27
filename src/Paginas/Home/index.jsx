@@ -1,5 +1,8 @@
+
 import { useState, useEffect } from "react"
 import Layout from "../../Componentes/Layout"
+import TablaSimple from "../../Componentes/Tabla"
+
 
 function Home() {
 
@@ -20,6 +23,7 @@ function Home() {
               <li key={item.id}>{item.nombre} {item.descripcion} </li>
             ))
           }
+          <TablaSimple />
           
       </Layout>
     )
