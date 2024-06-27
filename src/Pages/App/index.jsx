@@ -1,3 +1,4 @@
+import { useRoutes, BrowserRouter } from 'react-router-dom'
 import Home from '../Home'
 import Categoria from '../Categoria'
 import Estado from '../Estado'
@@ -7,18 +8,27 @@ import NotFound from '../NotFound'
 import Sesion from '../Sesion'
 import './App.css'
 
-function App() {
+const AppRoutes = () =>{
+  let routes = useRoutes([
+    {path: '/', element: <Home />},
+    {path: '/categoria', element: <Categoria />},
+    {path: '/estado', element: <Estado />},
+    {path: '/unidad', element: <Unidad />},
+    {path: '/proveedor', element: <Proveedor />},
+    {path: '/*', element: <NotFound />},
+    {path: '/sesion', element: <Sesion />},
+  ])
+  return routes
+}
+
+const App = () => {
 
   return (
     <div className="bg-green-400">
         Index
-        <Home />
-        <Categoria />
-        <Estado />
-        <Unidad />
-        <Proveedor />
-        <NotFound />
-        <Sesion />
+        <BrowserRouter>
+            <AppRoutes />
+        </BrowserRouter>
     </div>
   )
 }

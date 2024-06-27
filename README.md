@@ -1,8 +1,4 @@
-# React + Vite
+Front Warehouse-pdv-v1
+Desarrollo inicial del front del sistema de almacen con punto de venta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para la instalación localmente 1.- Copia del proyecto (En consola ubicarnos donde estara ubicado el proyecto) $ git clone DIRECCION NOMBRE_PROYECTO 2.- Instalación de dependencias (Nos posicionamos en la carpeta del proyecto) $ npm i 3.- Corremos el proyecto. $ npm run dev
